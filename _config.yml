@@ -1,0 +1,16 @@
+# Site settings
+title: Anthony Nguyen
+tagline: ""
+url: "http://antnguyen.com"
+timezone: America/New_York
+
+# Social
+socialimg: /img/social.jpg
+
+# Use this for production
+#sass:
+#    style: :compressed
+
+excerpt_separator: ""
+
+exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]

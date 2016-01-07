@@ -1,0 +1,6 @@
+@mixin link-fade($element, $time, $duration) {
+    -webkit-transition: $element $time $duration;
+    -moz-transition: $element $time $duration;
+    -o-transition: $element $time $duration;
+    transition: $element $time $duration;
+}

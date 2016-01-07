@@ -1,0 +1,23 @@
+{
+  "name": "antnguyen.com",
+  "version": "1.0.0",
+  "description": "Anthony Nguyen's Design Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "images": "imagemin img/* _site/img"
+  },
+  "keywords": [
+    "design",
+    "ux",
+    "art",
+    "direction",
+    "ui",
+    "philadelphia",
+    "designer"
+  ],
+  "author": "Anthony Nguyen",
+  "license": "MIT",
+  "devDependencies": {
+    "imagemin": "^3.2.0"
+  }
+}

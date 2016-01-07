@@ -1,0 +1,132 @@
+html, body {
+    height: 100%;
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background: $page-bg;
+    color: $text-color;
+    cursor: auto;
+    font-family: $serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: $white;
+    background: $link-hover;
+}
+
+::selection {
+    color: $white;
+    background: $link-hover;
+}
+
+a {
+    @include link-fade(all, 250ms, ease-in-out);
+    color: $link;
+    border-bottom: 1px solid $link;
+    cursor: pointer;
+    &:visited {
+        color: darken($link, 20%);
+        border-bottom: 1px solid darken($link, 20%);
+    }
+    &:active {
+        color: darken($link-hover, 20%);
+        border-bottom: 1px solid darken($link-hover, 20%);
+    }
+    &:hover {
+        color: $link-hover;
+        cursor: pointer;
+        border-bottom: 1px solid $link-hover;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: {
+        family: $sans-serif;
+        style: normal;
+        weight: normal;
+    };
+    color: $text-color;
+    text-rendering: geometricPrecision;
+    -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+    -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+    -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.25em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 300;
+    margin: .5em 0;
+}
+
+h4 {
+    @extend h2;
+}
+
+p {
+    font: {
+        family: $serif;
+        size: 1.25em;
+        style: normal;
+        weight: 300;
+    };
+    color: $text-color;
+    line-height: 1.7;
+    letter-spacing: 0.01rem;
+    text-rendering: geometricPrecision;
+}
+
+.small {
+    font-size: 85%;
+}
+
+@media screen and (max-width: 40em) {
+    p {
+        font-size: 1.05em;
+        line-height: 1.8;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+}
