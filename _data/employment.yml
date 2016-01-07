@@ -1,0 +1,63 @@
+- company: Free People
+  url: http://www.freepeople.com
+  location: Philadelphia, PA
+  position: Art Director
+  begin: '2015'
+  end: 'Current'
+  description: 'User experience, app & web design, front-end CSS'
+
+- company: Roar For Good
+  url: http://www.roarforgood.com/
+  location: Philadelphia, PA
+  position: Freelance Designer
+  begin: '2015'
+  end: 'Current'
+  description: 'Web design and production, promotional materials, front-end CSS'
+
+- company: Rokkan
+  url: http://rokkan.com/
+  location: New York, NY
+  position: Freelance Designer
+  begin: '2015'
+  end: 'Current'
+  description: 'Web design, design production'
+
+- company: W2O Group
+  url: http://www.w2ogroup.com/
+  location: New York, NY
+  position: Freelance Designer
+  begin: '2014'
+  end:
+  description: 'Web design, presentation design and materials'
+
+- company: Happy Cog
+  url: http://www.happycog.com
+  location: Philadelphia, PA
+  position: Designer
+  begin: '2014'
+  end: '2015'
+  description: 'Web design, UI/UX, user testing, prototyping'
+
+- company: Urban Outfitters
+  url: http://urbanoutfitters.com
+  location: Philadelphia, PA
+  position: Designer
+  begin: '2013'
+  end:
+  description: 'App design, interaction design and marketing strategy'
+
+- company: 1 Trick Pony
+  url: http://www.1trickpony.com
+  location: Hammonton, NJ
+  position: Designer
+  begin: '2011'
+  end: '2013'
+  description: 'UX, web and interactive design'
+
+- company: 160over90
+  url: http://www.160over90.com
+  location: Philadelphia, PA
+  position: Design Intern
+  begin: '2010'
+  end:
+  description: 'Information design, photo manipulation'

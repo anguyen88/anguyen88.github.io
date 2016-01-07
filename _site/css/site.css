@@ -1,3 +1,10 @@
+.light {
+  font-weight: 600;
+  font-size: 1.125em;
+  margin-bottom: .5em;
+  text-transform: uppercase;
+  display: inline-block; }
+
 meta.foundation-version {
   font-family: "/5.5.2/"; }
 
@@ -7326,3 +7333,26 @@ video {
   @media only screen and (min-width: 480px) {
     video {
       width: 65% !important; } }
+
+.tools-workflow li {
+  width: 48%; }
+
+.resume-experience {
+  margin-bottom: 1.5em; }
+  .resume-experience p, .resume-experience .blog-post li, .blog-post .resume-experience li {
+    margin-bottom: .125em; }
+  .resume-experience .job-company {
+    font-weight: 500;
+    line-height: 1.2; }
+    .resume-experience .job-company a {
+      border-bottom: none;
+      color: #333333; }
+      .resume-experience .job-company a:hover {
+        color: #34c762; }
+    .resume-experience .job-company span {
+      color: #7e7e7e;
+      font-size: 14px; }
+  .resume-experience .job-position {
+    font-size: 16px; }
+  .resume-experience .job-description {
+    font-size: 14px; }

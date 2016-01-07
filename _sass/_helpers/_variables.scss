@@ -11,3 +11,11 @@ $page-bg: #f8f8f8;
 $text-color: $black;
 $link: #c13dff;
 $link-hover: #34c762;
+
+.light {
+    font-weight: 600;
+    font-size: 1.125em;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+    display: inline-block;
+}

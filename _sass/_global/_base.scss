@@ -149,3 +149,37 @@ video {
         width: 65% !important;
     }
 }
+
+.tools-workflow {
+    li {
+        width: 48%;
+    }
+}
+
+.resume-experience {
+    margin-bottom: 1.5em;
+    p {
+        margin-bottom: .125em;
+    }
+    .job-company {
+        font-weight: 500;
+        line-height: 1.2;
+        a {
+            border-bottom: none;
+            color: #333333;
+            &:hover {
+                color: $link-hover;
+            }
+        }
+        span {
+            color: #7e7e7e;
+            font-size: 14px;
+        }
+    }
+    .job-position {
+        font-size: 16px;
+    }
+    .job-description {
+        font-size: 14px;
+    }
+}
