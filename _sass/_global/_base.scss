@@ -150,6 +150,14 @@ video {
     }
 }
 
+.featured-project {
+    video {
+        width: 100%    !important;
+        height: auto   !important;
+        box-shadow: 0px 0px 14px #e6e6e6;
+    }
+}
+
 .tools-workflow {
     li {
         width: 48%;

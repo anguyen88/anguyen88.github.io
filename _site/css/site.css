@@ -7130,7 +7130,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  background: #f8f8f8;
+  background: #fafafa;
   color: #333333;
   cursor: auto;
   font-family: "Merriweather", Georgia, serif;
@@ -7244,7 +7244,7 @@ p, .blog-post li {
     -moz-transition: all 125ms ease-in-out;
     -o-transition: all 125ms ease-in-out;
     transition: all 125ms ease-in-out;
-    fill: #f8f8f8; }
+    fill: #fafafa; }
   #header .page-logo:hover circle {
     fill: #c13dff; }
   #header .page-logo:hover polygon {
@@ -7333,6 +7333,11 @@ video {
   @media only screen and (min-width: 480px) {
     video {
       width: 65% !important; } }
+
+.featured-project video {
+  width: 100%    !important;
+  height: auto   !important;
+  box-shadow: 0px 0px 14px #e6e6e6; }
 
 .tools-workflow li {
   width: 48%; }
