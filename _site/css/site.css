@@ -5,6 +5,95 @@
   text-transform: uppercase;
   display: inline-block; }
 
+html, body {
+  height: 100%;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+html {
+  box-sizing: border-box; }
+
+body {
+  background: white;
+  color: #333333;
+  cursor: auto;
+  font-family: "Merriweather", Georgia, serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #f8f8f8;
+  background: #34c762; }
+
+::selection {
+  color: #f8f8f8;
+  background: #34c762; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic; }
+
+h1, h2, h4, h3, h4, h5, h6 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #333333;
+  text-rendering: geometricPrecision;
+  -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+  -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+  -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1; }
+
+h1 {
+  font-size: 2em;
+  font-weight: 600; }
+
+h2, h4 {
+  font-size: 1.25em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 1em; }
+
+h3 {
+  font-size: 2em;
+  font-weight: 300;
+  margin: .5em 0; }
+
+p {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1.25em;
+  font-style: normal;
+  font-weight: 300;
+  color: #333333;
+  line-height: 1.7;
+  letter-spacing: 0.01rem;
+  text-rendering: geometricPrecision; }
+
+.small {
+  font-size: 85%; }
+
+@media screen and (max-width: 40em) {
+  p {
+    font-size: 1.05em;
+    line-height: 1.8; }
+
+  h3 {
+    font-size: 1.5em; } }
 meta.foundation-version {
   font-family: "/5.5.2/"; }
 
@@ -7117,111 +7206,63 @@ th.hide-for-touch {
 @media not print {
   .show-for-print {
     display: none !important; } }
-html, body {
-  height: 100%;
-  font-size: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-html {
-  box-sizing: border-box; }
-
-body {
-  background: #fafafa;
-  color: #333333;
-  cursor: auto;
-  font-family: "Merriweather", Georgia, serif;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-  position: relative; }
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit; }
-
-::-moz-selection {
-  /* Code for Firefox */
-  color: #f8f8f8;
-  background: #34c762; }
-
-::selection {
-  color: #f8f8f8;
-  background: #34c762; }
-
-a {
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
-  color: #c13dff;
-  border-bottom: 1px solid #c13dff;
-  cursor: pointer; }
-  a:visited {
-    color: #9200d6;
-    border-bottom: 1px solid #9200d6; }
-  a:active {
-    color: #1f763a;
-    border-bottom: 1px solid #1f763a; }
-  a:hover {
-    color: #34c762;
-    cursor: pointer;
-    border-bottom: 1px solid #34c762; }
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: inline-block;
-  vertical-align: middle;
-  -ms-interpolation-mode: bicubic; }
-
-h1, h2, h4, h3, h4, h5, h6 {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  color: #333333;
-  text-rendering: geometricPrecision;
-  -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-  -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-  -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1; }
-
-h1 {
-  font-size: 2em;
-  font-weight: 600; }
-
-h2, h4 {
-  font-size: 1.25em;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-top: 1em; }
-
-h3 {
-  font-size: 2em;
-  font-weight: 300;
-  margin: .5em 0; }
-
-p {
-  font-family: "Merriweather", Georgia, serif;
-  font-size: 1.25em;
-  font-style: normal;
-  font-weight: 300;
-  color: #333333;
-  line-height: 1.7;
-  letter-spacing: 0.01rem;
-  text-rendering: geometricPrecision; }
-
-.small {
-  font-size: 85%; }
-
-@media screen and (max-width: 40em) {
-  p {
-    font-size: 1.05em;
-    line-height: 1.8; }
-
-  h3 {
-    font-size: 1.5em; } }
+#homepage-hero {
+  position: relative;
+  background: #35e099;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #35e099 0%, #4888da 100%);
+  background: -webkit-linear-gradient(top, #35e099 0%, #4888da 100%);
+  background: linear-gradient(to bottom, #35e099 0%, #4888da 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35e099', endColorstr='#4888da',GradientType=0 ); }
+  #homepage-hero:before {
+    background-image: url("/img/hero/hero-orb.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    background-position-x: 5em;
+    background-clip: content-box;
+    height: 100%;
+    width: 900px;
+    content: ' ';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: .25; }
+    @media screen and (max-width: 767px) {
+      #homepage-hero:before {
+        opacity: .125; } }
+  #homepage-hero .designer-information {
+    margin: 8em 0; }
+    @media screen and (max-width: 767px) {
+      #homepage-hero .designer-information {
+        margin: 5em 0; } }
+  #homepage-hero .site-logo {
+    margin: 0 0 1em; }
+    #homepage-hero .site-logo svg {
+      height: 80px;
+      width: auto; }
+  #homepage-hero #name {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    color: white;
+    line-height: 1;
+    letter-spacing: 5px; }
+  #homepage-hero .design-title {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 4px; }
+  #homepage-hero p {
+    font-family: "Merriweather", Georgia, serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: white; }
+    @media screen and (max-width: 767px) {
+      #homepage-hero p {
+        font-size: 16px; } }
+  #homepage-hero a {
+    color: white;
+    border-bottom: 1px solid white; }

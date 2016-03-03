@@ -1,4 +1,4 @@
-$sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
+$sans-serif: "Lato", Helvetica, Arial, sans-serif;
 $serif: "Merriweather", Georgia, serif;
 
 $white: #f8f8f8;
@@ -7,7 +7,7 @@ $light-grey: #777;
 $pink: #ff008a;
 $blue: #0078ff;
 
-$page-bg: #fafafa;
+$page-bg: white;
 $text-color: $black;
 $link: #c13dff;
 $link-hover: #34c762;
@@ -19,3 +19,10 @@ $link-hover: #34c762;
     text-transform: uppercase;
     display: inline-block;
 }
+
+// Breakpoint Settings
+$mobile: 640px;
+$tablet: 767px;
+
+// Images
+$hero-image: "/img/hero/hero-orb.png";
