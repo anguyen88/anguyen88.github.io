@@ -1,7 +1,15 @@
 ---
 ---
+
+@import "_defaults/normalize";
+// @import "_defaults/skeleton";
+
+@import "_bourbon/bourbon";
+
 @import "_helpers/variables";
 @import "_helpers/mixins";
-@import "_helpers/default";
+@import "_foundation/foundation";
+@import "_helpers/customs";
 
 @import "_global/base";
+@import "_global/project-thumbs";

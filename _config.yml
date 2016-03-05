@@ -8,9 +8,10 @@ timezone: America/New_York
 socialimg: /img/social.jpg
 
 # Use this for production
-#sass:
-#    style: :compressed
+sass:
+  sass_dir: _scss
+  style: :compressed
 
 excerpt_separator: ""
 
-exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
+exclude: [README.md, node_modules, gruntfile.js, package.json]
