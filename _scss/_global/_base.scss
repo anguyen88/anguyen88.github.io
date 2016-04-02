@@ -5,9 +5,8 @@ html {
 
 body {
     margin: 0;
-    height: 100%;
+    height: auto;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     @include linear-gradient(#469cdf, #8943c6);
 }
 
@@ -45,6 +44,11 @@ a {
     }
 }
 
+h1, h2, h3, h4, h5, h6, p, li {
+    color: $white;
+    font-family: $sans-serif;
+}
+
 img {
     box-shadow: 0 0 8px 0 $off-white;
 }
@@ -52,6 +56,8 @@ img {
 .homepage--wrapper {
     position: relative;
 }
+
+// Navigation
 
 #page--navigation {
     position: fixed;
@@ -99,6 +105,8 @@ img {
     }
 }
 
+// Homepage
+
 #homepage--body {
     p {
         color: $white;
@@ -128,7 +136,7 @@ img {
     @media screen and (max-width: 39.9375em) {
         display: block;
         height: 100%;
-        margin-bottom: 4em;
+        padding-bottom: 4em;
     }
 }
 
@@ -165,5 +173,63 @@ img {
     }
     @media screen and (max-width: 39.9375em) {
         margin: 3em 0 0;
+    }
+}
+
+// Resume
+
+#resume--body {
+    margin-top: 7em;
+    .professional--experience {
+        padding-bottom: 2em;
+    }
+    .resume--title {
+        margin-bottom: .5em;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        font: {
+            size: 32px;
+            weight: 700;
+        };
+    }
+    .employer--info {
+        list-style: none;
+        margin: 0 0 2em;
+        min-height: 110px;
+        .company {
+            font: {
+                size: 21px;
+                weight: 700;
+            };
+            span.location {
+                font: {
+                    size: 14px;
+                    weight: 500;
+                };
+                text-transform: capitalize;
+            }
+        }
+        span.date {
+            font: {
+                size: 14px;
+                weight: 500;
+            };
+            font-style: italic;
+        }
+    }
+    @media screen and (max-width: 39.9375em) {
+        margin-top: 0;
+        .resume--title {
+            margin-bottom: .5em;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            font: {
+                size: 24px;
+                weight: 700;
+            };
+        }
+        .employer--info {
+            min-height: initial;
+        }
     }
 }
