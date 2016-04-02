@@ -10,6 +10,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    box-shadow: 0 0 8px 0 $off-white;
+}
+
 .hero-padding {
     padding: 8em 0;
     @media screen and (max-width: 39.9375em) {
@@ -98,26 +102,7 @@ a {
         display: inline-block;
         color: white;
         z-index: 0;
-        border-bottom: 2px solid white;
-        &:after {
-            position: absolute;
-            background-color: white;
-            display: inline;
-            content: ' ';
-            height: 0;
-            width: 100%;
-            left: 0;
-            bottom: 0;
-            z-index: -1;
-        }
-        &:hover {
-            @include transition(all 125ms ease-in-out);
-            color: $black;
-            &:after {
-                @include transition(all 250ms ease-in-out);
-                height: 100%;
-            }
-        }
+        @include link-slide-left($white, 0px);
     }
 }
 
@@ -156,30 +141,33 @@ a {
         display: inline;
         color: $secondary;
         z-index: 0;
-        border-bottom: 2px solid $secondary;
-        &:after {
-            position: absolute;
-            background-color: $secondary;
-            display: inline;
-            content: ' ';
-            height: 100%;
-            width: 0;
-            left: 0;
-            bottom: 0;
-            z-index: -1;
-        }
-        &:hover {
-            @include transition(all 250ms ease-in-out);
-            color: white;
-            &:after {
-                @include transition(all 250ms ease-in-out);
-                width: 100%;
-            }
-        }
+        @include link-slide-left($secondary, -3px);
     }
     .project-main {
         position: relative;
     }
+}
+
+.nav-name {
+    text-align: center;
+    padding-top: 1em;
+    margin: 0 auto;
+    a {
+        position: relative;
+        display: inline-block;
+        color: white;
+        z-index: 0;
+        @include link-slide-left($white, -3px);
+    }
+    font: {
+        family: $sans-serif;
+        size: 10px;
+        weight: 900;
+    };
+    text-transform: uppercase;
+    color: $white;
+    line-height: 1.4;
+    letter-spacing: 3px;
 }
 
 .project-title {

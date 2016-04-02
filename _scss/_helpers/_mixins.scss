@@ -13,3 +13,99 @@
     background: linear-gradient(to bottom, #35e099 0%, #4888da 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35e099', endColorstr='#4888da',GradientType=0 );
 }
+
+@mixin project-hero {
+    position: relative;
+    @include linear-gradient(#7c037b, #ff3b7c);
+    &:before {
+        background: {
+            image: url($free-hero-image);
+            size: cover;
+            repeat: no-repeat;
+            clip: content-box;
+        };
+        height: 100%;
+        width: 100%;
+        content: ' ';
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        opacity: .125;
+    }
+    #name {
+        font: {
+            family: $sans-serif;
+            size: 32px;
+            weight: 300;
+        };
+        margin: 0 auto;
+        color: white;
+        line-height: 1;
+        letter-spacing: 6px;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        text-align: center;
+        @media screen and (min-width: 40em) {
+            font-size: 48px;
+        }
+    }
+    .design-title {
+        font: {
+            family: $sans-serif;
+            size: 12px;
+            weight: 900;
+        };
+        margin: 0 auto;
+        color: white;
+        letter-spacing: 4px;
+        line-height: 1.6;
+        text-align: center;
+    }
+    .hero-padding {
+        padding: 12em 0 16em;
+        @media screen and (max-width: 39.9375em) {
+            padding: 8em 0 14em;
+        }
+    }
+    .project-intro {}
+}
+
+@mixin link-slide-left($border-color, $bottom) {
+    &:before {
+        position: absolute;
+        background-color: $border-color;
+        display: inline;
+        content: ' ';
+        height: 2px;
+        width: 50%;
+        right: 50%;
+        bottom: $bottom;
+        z-index: -1;
+        @include transition(all 375ms ease-in-out);
+    }
+    &:hover {
+        &:before {
+            width: 0;
+            right: 0;
+        }
+    }
+    &:after {
+        position: absolute;
+        background-color: $border-color;
+        display: inline;
+        content: ' ';
+        height: 2px;
+        width: 50%;
+        left: 50%;
+        bottom: $bottom;
+        z-index: -1;
+        @include transition(all 375ms ease-in-out);
+    }
+    &:hover {
+        &:after {
+            width: 0;
+            left: 0;
+        }
+    }
+}

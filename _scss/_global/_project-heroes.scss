@@ -1,0 +1,9 @@
+#free-project-hero {
+    @include project-hero;
+    @include linear-gradient(#7c037b, #ff3b7c);
+    &:before {
+        background: {
+            image: url($free-hero-image);
+        };
+    }
+}
