@@ -151,6 +151,7 @@ img {
     @media screen and (max-width: 39.9375em) {
         font-size: 48px;
         margin-bottom: .25em;
+        margin-top: .25em;
     }
 }
 
@@ -239,4 +240,9 @@ img {
             }
         }
     }
+}
+
+#footer {
+    height: 100px;
+    display: block;
 }
