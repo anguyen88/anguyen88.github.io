@@ -218,7 +218,7 @@ img {
         }
     }
     @media screen and (max-width: 39.9375em) {
-        margin-top: 0;
+        margin-top: 1em;
         .resume--title {
             margin-bottom: .5em;
             text-transform: uppercase;
@@ -230,6 +230,12 @@ img {
         }
         .employer--info {
             min-height: initial;
+            .company {
+                font: {
+                    size: 18px;
+                    weight: 700;
+                };
+            }
         }
     }
 }
