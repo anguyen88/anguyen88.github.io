@@ -4,200 +4,165 @@ html {
 
 body {
     margin: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @include linear-gradient(#469cdf, #8943c6);
 }
 
 a {
+    color: $white;
     text-decoration: none;
+    border-bottom: 1px solid $white;
+    font: {
+        family: $sans-serif;
+    };
+    position: relative;
+    border-bottom: none;
+    padding-bottom: 2px;
+    color: $white;
+    &:after {
+        @include transition(all 250ms ease-in-out);
+        position: absolute;
+        content: '';
+        bottom: 0;
+        height: 1px;
+        background-color: $white;
+        width: 100%;
+        left: 0;
+    }
+    &:hover {
+        color: $white;
+        &:after {
+            width: 0;
+        }
+    }
+    &:active,
+    &:visited,
+    &:focus {
+        color: $white;
+    }
 }
 
 img {
     box-shadow: 0 0 8px 0 $off-white;
 }
 
-.hero-padding {
-    padding: 8em 0;
-    @media screen and (max-width: 39.9375em) {
-        padding: 4em 0;
-    }
-}
-
-.project-padding {
-    padding: 3em 0 0;
-    @media screen and (min-width: 40em) {
-        padding: 8em 0 2em;
-    }
-}
-
-#homepage-hero {
+.homepage--wrapper {
     position: relative;
-    @include linear-gradient($secondary, $primary);
-    &:before {
-        background: {
-            image: url($hero-image);
-            size: cover;
-            repeat: no-repeat;
-            position-y: -100px;
-            position-x: 5em;
-            clip: content-box;
-        };
-        height: 100%;
-        width: 900px;
-        content: ' ';
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        opacity: .25;
-        @media screen and (max-width: 39.9375em) {
-            opacity: .125;
-        }
-    }
-    .site-logo {
-        margin: 0 0 1em;
-        svg {
-            height: 80px;
-            width: auto;
-        }
-    }
-    #name {
+}
+
+#page--navigation {
+    position: fixed;
+    top: 0;
+    margin: 2em 0;
+    z-index: 2;
+    .link-item {
+        display: inline-table;
+        list-style: none;
         font: {
-            family: $sans-serif;
-            size: 40px;
-            weight: 300;
+            size: 18px;
         };
-        color: white;
-        line-height: 1;
-        letter-spacing: 6px;
-        margin-bottom: 12px;
-        @media screen and (min-width: 40em) {
-            font-size: 48px;
+        padding-right: 3em;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        a {
+            position: relative;
+            border-bottom: none;
+            padding-bottom: 2px;
+            color: $white;
+            &:after {
+                @include transition(all 250ms ease-in-out);
+                position: absolute;
+                content: '';
+                bottom: 13px;
+                height: 1px;
+                background-color: $white;
+                width: 0;
+                left: 0;
+            }
+            &:hover {
+                color: $white;
+                &:after {
+                    width: 100%;
+                }
+            }
         }
     }
-    .design-title {
-        font: {
-            family: $sans-serif;
-            size: 12px;
-            weight: 900;
-        };
-        color: white;
-        letter-spacing: 4px;
-        line-height: 1.6;
+    @media screen and (max-width: 39.9375em) {
+        position: relative;
+        .link-item {
+            padding-right: 1.5em;
+            font-size: 16px;
+        }
     }
+}
+
+#homepage--body {
     p {
+        color: $white;
         font: {
-            family: $serif;
-            size: 16px;
+            family: $sans-serif;
+            size: 21px;
             weight: 300;
         };
-        color: white;
-        line-height: 1.8;
-        @media screen and (min-width: 40em) {
-            font: {
-                size: 18px;
-            };
+        line-height: 1.4;
+    }
+    @media screen and (max-width: 39.9375em) {
+        p {
+            font-size: 18px;
         }
+    }
+}
+
+.flexbox--container {
+    height: 100vh;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    @media screen and (max-width: 39.9375em) {
+        display: block;
+        height: 100%;
+        margin-bottom: 4em;
+    }
+}
+
+.homepage--intro {
+    font: {
+        size: 64px;
+        family: $sans-serif;
+        weight: 900;
+    };
+    color: $white;
+    line-height: 1.1;
+    @media screen and (max-width: 39.9375em) {
+        font-size: 48px;
+        margin-bottom: .25em;
+    }
+}
+
+.social-networks {
+    margin: 2em 0 0;
+    li {
+        display: inline-block;
+        list-style: none;
+        margin-right: 2em;
     }
     a {
-        position: relative;
-        display: inline-block;
-        color: white;
-        z-index: 0;
-        @include link-slide-left($white, 0px);
-    }
-}
-
-.project-block {
-    img.project-main-image {
-        width: 75%;
-        box-shadow: 0 0 8px 0 $off-white;
-        margin-bottom: 1em;
-        &.full {
-            width: 100%;
+        &:after {
+            width: 0;
         }
-        @media screen and (min-width: 40em) {
-            width: 75%;
-            &.full {
+        &:hover {
+            &:after {
                 width: 100%;
             }
         }
     }
-    img.project-thumb-image {
-        position: absolute;
-        width: 50%;
-        box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.125);
-        top: 150px;
-        right: 0;
-        margin-right: 15px;
-        margin-bottom: 2em;
-        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-            top: 100px;
-        }
-        @media screen and (max-width: 39.9375em) {
-            top: 50px;
-        }
+    @media screen and (max-width: 39.9375em) {
+        margin: 3em 0 0;
     }
-    a {
-        position: relative;
-        display: inline;
-        color: $secondary;
-        z-index: 0;
-        @include link-slide-left($secondary, -3px);
-    }
-    .project-main {
-        position: relative;
-    }
-}
-
-.nav-name {
-    text-align: center;
-    padding-top: 1em;
-    margin: 0 auto;
-    a {
-        position: relative;
-        display: inline-block;
-        color: white;
-        z-index: 0;
-        @include link-slide-left($white, -3px);
-    }
-    font: {
-        family: $sans-serif;
-        size: 10px;
-        weight: 900;
-    };
-    text-transform: uppercase;
-    color: $white;
-    line-height: 1.4;
-    letter-spacing: 3px;
-}
-
-.project-title {
-    font: {
-        family: $sans-serif;
-        size: 24px;
-        weight: 300;
-    };
-    text-transform: uppercase;
-    color: $black;
-    line-height: 1.4;
-    letter-spacing: 2px;
-    margin-bottom: 12px;
-    @media screen and (min-width: 40em) {
-        font-size: 32px;
-    }
-}
-
-.project-categories {
-    font: {
-        family: $sans-serif;
-        size: 10px;
-        weight: 900;
-    };
-    color: $medium-grey;
-    letter-spacing: 4px;
-    line-height: 1.6;
-}
-
-#footer {
-    margin-top: 8em;
-    height: 200px;
 }
