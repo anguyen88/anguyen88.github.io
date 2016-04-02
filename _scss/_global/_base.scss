@@ -1,5 +1,6 @@
 html {
     -webkit-font-smoothing: antialiased;
+    @include linear-gradient(#469cdf, #8943c6);
 }
 
 body {
