@@ -1,17 +1,13 @@
 html {
     -webkit-font-smoothing: antialiased;
     @include linear-gradient(#469cdf, #8943c6);
-    background-color: #8943c6;
+    background-color: #ffffff;
     height: initial;
     min-height: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-body {
-    background-color: transparent;
 }
 
 a {
@@ -48,13 +44,14 @@ a {
     }
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 h1, h2, h3, h4, h5, h6, p, li {
     color: $white;
     font-family: $sans-serif;
-}
-
-img {
-    box-shadow: 0 0 8px 0 $off-white;
 }
 
 .homepage--wrapper {
@@ -64,7 +61,7 @@ img {
 // Navigation
 
 #page--navigation {
-    position: fixed;
+    position: absolute;
     top: 0;
     margin: 2em 0;
     z-index: 2;
@@ -109,7 +106,22 @@ img {
     }
 }
 
-// Homepage
+// // Homepage
+
+.homepage--intro {
+    font: {
+        size: 64px;
+        family: $sans-serif;
+        weight: 900;
+    };
+    color: $white;
+    line-height: 1.1;
+    @media screen and (max-width: 39.9375em) {
+        font-size: 40px;
+        margin-bottom: .25em;
+        margin-top: .25em;
+    }
+}
 
 #homepage--body {
     p {
@@ -125,37 +137,6 @@ img {
         p {
             font-size: 18px;
         }
-    }
-}
-
-.flexbox--container {
-    height: 100vh;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    align-items: center;
-    @media screen and (max-width: 39.9375em) {
-        display: block;
-        height: 100%;
-        padding-bottom: 4em;
-    }
-}
-
-.homepage--intro {
-    font: {
-        size: 64px;
-        family: $sans-serif;
-        weight: 900;
-    };
-    color: $white;
-    line-height: 1.1;
-    @media screen and (max-width: 39.9375em) {
-        font-size: 48px;
-        margin-bottom: .25em;
-        margin-top: .25em;
     }
 }
 
@@ -181,13 +162,25 @@ img {
     }
 }
 
+#footer {
+    height: 0;
+    display: block;
+    @media screen and (max-width: 39.9375em) {
+        height: 4em;
+    }
+}
+
+#subpage--body {
+    margin-top: 7em;
+    padding-bottom: 4em;
+    @media screen and (max-width: 39.9375em) {
+        margin-top: 1em;
+    }
+}
+
 // Resume
 
-#resume--body {
-    margin-top: 7em;
-    .professional--experience {
-        padding-bottom: 2em;
-    }
+.resume--body {
     .resume--title {
         margin-bottom: .5em;
         text-transform: uppercase;
@@ -199,7 +192,7 @@ img {
     }
     .employer--info {
         list-style: none;
-        margin: 0 0 2em;
+        margin: 0 0 1em;
         min-height: 110px;
         .company {
             font: {
@@ -222,10 +215,12 @@ img {
             font-style: italic;
         }
     }
+    .download-link {
+        display: inline-block;
+        margin-top: 4em;
+    }
     @media screen and (max-width: 39.9375em) {
-        margin-top: 1em;
         .resume--title {
-            margin-bottom: 1em;
             text-transform: uppercase;
             letter-spacing: 4px;
             font: {
@@ -236,49 +231,12 @@ img {
         }
         .employer--info {
             min-height: initial;
+            margin-bottom: 1.5em;
             .company {
                 font: {
                     size: 18px;
                     weight: 700;
                 };
-            }
-        }
-    }
-}
-
-#footer {
-    height: 100px;
-    display: block;
-}
-
-// Projects
-
-#subpage--body {
-    margin-top: 7em;
-    @media screen and (max-width: 39.9375em) {
-        margin-top: 1em;
-    }
-}
-
-.project--list {
-    margin: 0;
-    .project--title {
-        list-style: none;
-        margin: .25em 0;
-        font: {
-            size: 32px;
-        };
-        a {
-            &:after {
-                height: 100%;
-                width: 0;
-                z-index: -1;
-            }
-            &:hover {
-                color: #8943c6;
-                &:after {
-                    width: 100%;
-                }
             }
         }
     }

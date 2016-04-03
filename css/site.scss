@@ -2,13 +2,10 @@
 ---
 
 @import "_defaults/normalize";
-// @import "_defaults/skeleton";
-
+@import "_defaults/grid";
+@import "_helpers/variables";
+@import "_helpers/utilities";
 @import "_bourbon/bourbon";
 
-@import "_helpers/variables";
-@import "_helpers/mixins";
-@import "_foundation/foundation";
-@import "_helpers/customs";
 
 @import "_global/base";
