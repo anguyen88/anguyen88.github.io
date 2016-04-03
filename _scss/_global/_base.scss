@@ -1,5 +1,6 @@
 html {
     -webkit-font-smoothing: antialiased;
+    background-attachment: fixed;
     @include linear-gradient(#469cdf, #8943c6);
     background-color: #ffffff;
     height: initial;
