@@ -1,13 +1,17 @@
 html {
     -webkit-font-smoothing: antialiased;
     @include linear-gradient(#469cdf, #8943c6);
+    background-color: #8943c6;
+    height: initial;
+    min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 body {
-    margin: 0;
-    height: auto;
-    background-repeat: no-repeat;
-    @include linear-gradient(#469cdf, #8943c6);
+    background-color: transparent;
 }
 
 a {
@@ -245,4 +249,37 @@ img {
 #footer {
     height: 100px;
     display: block;
+}
+
+// Projects
+
+#subpage--body {
+    margin-top: 7em;
+    @media screen and (max-width: 39.9375em) {
+        margin-top: 1em;
+    }
+}
+
+.project--list {
+    margin: 0;
+    .project--title {
+        list-style: none;
+        margin: .25em 0;
+        font: {
+            size: 32px;
+        };
+        a {
+            &:after {
+                height: 100%;
+                width: 0;
+                z-index: -1;
+            }
+            &:hover {
+                color: #8943c6;
+                &:after {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
