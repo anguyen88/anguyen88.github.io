@@ -2,8 +2,9 @@ html {
     -webkit-font-smoothing: antialiased;
     @include linear-gradient(#469cdf, #8943c6);
     background-color: #ffffff;
-    height: initial;
+    height: auto;
     min-height: 100%;
+    width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -102,6 +103,13 @@ h1, h2, h3, h4, h5, h6, p, li {
         .link-item {
             padding-right: 1.5em;
             font-size: 16px;
+            a {
+                &:hover {
+                    &:after {
+                        bottom: 11px;
+                    }
+                }
+            }
         }
     }
 }
@@ -138,6 +146,7 @@ h1, h2, h3, h4, h5, h6, p, li {
         p {
             font-size: 18px;
         }
+        padding-bottom: 4em;
     }
 }
 
@@ -163,14 +172,6 @@ h1, h2, h3, h4, h5, h6, p, li {
     }
 }
 
-#footer {
-    height: 0;
-    display: block;
-    @media screen and (max-width: 39.9375em) {
-        height: 4em;
-    }
-}
-
 #subpage--body {
     margin-top: 7em;
     padding-bottom: 4em;
@@ -182,15 +183,6 @@ h1, h2, h3, h4, h5, h6, p, li {
 // Resume
 
 .resume--body {
-    .resume--title {
-        margin-bottom: .5em;
-        text-transform: uppercase;
-        letter-spacing: 8px;
-        font: {
-            size: 32px;
-            weight: 700;
-        };
-    }
     .employer--info {
         list-style: none;
         margin: 0 0 1em;
@@ -221,15 +213,6 @@ h1, h2, h3, h4, h5, h6, p, li {
         margin-top: 4em;
     }
     @media screen and (max-width: 39.9375em) {
-        .resume--title {
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            font: {
-                size: 32px;
-                weight: 700;
-            };
-            line-height: 1.1;
-        }
         .employer--info {
             min-height: initial;
             margin-bottom: 1.5em;
@@ -238,6 +221,28 @@ h1, h2, h3, h4, h5, h6, p, li {
                     size: 18px;
                     weight: 700;
                 };
+            }
+        }
+    }
+}
+
+.work-landing--body {
+    .work--list {
+        .work--list-item {
+            list-style: none;
+            margin: 0 0 1.5em;
+            a {
+                font: {
+                    size: 21px;
+                };
+                &:hover {
+                    color: #8943c6;
+                    &:after {
+                        width: 100%;
+                        height: 100%;
+                        z-index: -2;
+                    }
+                }
             }
         }
     }

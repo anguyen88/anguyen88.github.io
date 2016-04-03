@@ -12,3 +12,20 @@
         height: 100%;
     }
 }
+
+.subpage--title {
+    margin-bottom: .5em;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font: {
+        size: 32px;
+        weight: 700;
+    };
+    @media screen and (max-width: 39.9375em) {
+        letter-spacing: 4px;
+        font: {
+            size: 32px;
+        };
+        line-height: 1.1;
+    }
+}
