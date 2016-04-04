@@ -158,12 +158,18 @@ h1, h2, h3, h4, h5, h6, p, li {
         margin-right: 2em;
     }
     a {
+        i {
+            @include transition(all 200ms ease-in-out);
+        }
         &:after {
             width: 0;
         }
         &:hover {
+            i {
+                @include transform(scale(1.375));
+            }
             &:after {
-                width: 100%;
+                width: 0;
             }
         }
     }
