@@ -1,0 +1,72 @@
+html {
+    background-color: #333333;
+    font-family: "open sans", arial, helvetica, sans-serif;
+    text-align: center;
+}
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 .5em;
+}
+
+p {
+    color: white;
+    font-size: 48px;
+    font-weight: 300;
+}
+
+#job-title,
+#job-role {
+    color: #31b8ea;
+    font-weight: 800;
+}
+
+button {
+    outline: none;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: white;
+    color: #333333;
+}
+
+.fa-twitter {
+    color: white;
+    margin-top: 2em;
+}
+
+.fa-twitter:hover {
+    color: #ff008a;
+}
+
+.small {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 40em) {
+    .show-for-small {
+        display: inline;
+    }
+    .show-for-large {
+        display: none;
+    }
+    p {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 40.03em) and (max-width: 1000em) {
+    .show-for-large {
+        display: inline;
+    }
+    .show-for-small {
+        display: none;
+    }
+}
