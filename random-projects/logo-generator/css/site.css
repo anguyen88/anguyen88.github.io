@@ -1,0 +1,187 @@
+body {
+    font-family: arial;
+    background-color: #f8f8f8;
+    height: 100vh;
+}
+
+@media (min-width: 40rem) {
+    .column {
+        float: left;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .column.full {
+        width: 100%;
+    }
+    .column.two-thirds {
+        width: 66.7%;
+    }
+    .column.half {
+        width: 50%;
+    }
+    .column.third {
+        width: 33.3%;
+    }
+    .column.fourth {
+        width: 25%;
+    }
+    .column.flow-opposite {
+        float: right;
+    }
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: 300;
+    color: #333333;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 48rem;
+    width: 90%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 48rem;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    -webkit-transform: translateY(-10%);
+    -ms-transform: translateY(-10%);
+    transform: translateY(-10%);
+}
+
+input {
+    height: 44px;
+    width: 300px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #bebebe;
+    margin: 2em 0;
+    outline: none;
+}
+
+input:active,
+input:focus {
+    border: 1px solid #e10434;
+}
+
+#logo-output {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: -0.0625em;
+    text-transform: lowercase;
+}
+
+.logo {
+    height: 20px;
+    width: 20px;
+    margin: 5px 0;
+    vertical-align: top;
+}
+
+button {
+    margin-top: 2em;
+}
+
+.twitter-share {
+    margin: 4em 0 0;
+}
+
+@media only screen and (max-width: 40em) {
+    body {
+        height: 0;
+    }
+    .container {
+        margin: 12em auto;
+        top: 0%;
+        -webkit-transform: translateY(-35%);
+        -ms-transform: translateY(-35%);
+        transform: translateY(-35%);
+    }
+    input {
+        width: 280px;
+    }
+    #logo-output {
+        font-size: 36px;
+    }
+    .logo {
+        height: 15px;
+        width: 15px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+}
+
+button {
+    margin: 2em;
+    position: relative;
+    padding: 1em 1.5em;
+    background: transparent;
+    border: solid 2px #333;
+    z-index: 0;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .0875em;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: all 100ms ease-in-out;
+    border: solid 2px #e10434;
+    color: white;
+    background: transparent;
+}
+
+button:after, button:before {
+    transition: all 100ms ease-in-out;
+    position: absolute;
+    content: '';
+    z-index: -1;
+    background: #e10434;
+}
+
+button:before {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+}
+
+button:hover:before {
+    height: 100%;
+}
+
+.fa-twitter {
+    transition: all 250ms ease-in-out;
+    color: #333333;
+}
+
+.fa-twitter:hover {
+    transition: all 250ms ease-in-out;
+    color: #e10434;
+}
