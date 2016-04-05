@@ -1,0 +1,30 @@
+---
+layout: projects
+categories: project
+title: Free People Replatform
+comments: false
+published: false
+permalink: fp-replat/
+---
+<div class="row clearfix">
+<!-- 	<div class="column full">
+		<ul>
+			<li>Lead Designer: Anthony Nguyen</li>
+			<li>Dev Team: <a href="https://www.inverseparadox.com/" target="_blank">Inverse Paradox</a></li>
+		</ul>
+	</div> -->
+	<div class="column full">
+		<p><a href="http://www.forgeconf.com/" target="_blank">Forge Conference</a> is Philadelphia's Premier UX &amp; Product Design Conference. The goal for the 2016 website was to evolve the brand further from the previous 2 years.</p>
+	</div>
+</div>
+
+<div class="row clearfix project-image">
+	<img class="column full" src="/img/proj/fp-replat/img-1.jpg" alt="">
+	<img class="column full" src="/img/proj/fp-replat/img-2.png" alt="">
+	<img class="column full" src="/img/proj/fp-replat/img-3.jpg" alt="">
+	<img class="column full" src="/img/proj/fp-replat/img-4.jpg" alt="">
+	<img class="column full" src="/img/proj/fp-replat/img-5.jpg" alt="">
+	<img class="column full" src="/img/proj/fp-replat/img-6.jpg" alt="">
+	<img class="column full" src="/img/proj/fp-replat/img-7.png" alt="">
+	<img class="column full" src="/img/proj/fp-replat/img-8.jpg" alt="">
+</div>

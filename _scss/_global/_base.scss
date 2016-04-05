@@ -273,6 +273,13 @@ h1, h2, h3, h4, h5, h6, p, li {
         line-height: 1.5;
         margin: 0 0 1em;
     }
+    ul {
+        margin-bottom: 1em;
+    }
+    li {
+        @extend p;
+        margin: 0;
+    }
     .project-image {
         margin: 0 auto;
         display: block;
@@ -287,7 +294,7 @@ h1, h2, h3, h4, h5, h6, p, li {
     img {
         text-align: center;
         padding-bottom: 2em;
-        @media screen and (max-width: 39.9375em) {
+        @media screen and (max-width: 63.9375em) {
             width: 100%;
         }
     }
