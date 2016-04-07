@@ -21,10 +21,10 @@ permalink: tradeking/
 	<div class="column third medium-half">
 		<img class="drop-shadow" src="/img/proj/tradeking/img-4.jpg" alt="">
 	</div>
-	<div class="column third medium-half margin-top">
+	<div class="column third medium-half">
 		<img class="drop-shadow" src="/img/proj/tradeking/img-5.jpg" alt="">
 	</div>
-	<div class="column third medium-half margin-top">
+	<div class="column third medium-half">
 		<video class="drop-shadow" width="563px" controls><source src="/img/proj/tradeking/tradeking.mp4" type="video/mp4"></video>
 	</div>
 </div>
