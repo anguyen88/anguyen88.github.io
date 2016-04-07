@@ -342,6 +342,9 @@ video {
     border-bottom: 1px solid $white;
     padding: 2em 0 5em;
     margin-bottom: 2em;
+    @media screen and (max-width: 39.9375em) {
+        padding: 2em 0 4.25em;
+    }
     a {
         background-color: transparent;
         border: 1px solid white;
