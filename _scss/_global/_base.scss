@@ -291,11 +291,16 @@ h1, h2, h3, h4, h5, h6, p, li {
             };
         }
     }
-    img {
+    img,
+    video {
         text-align: center;
         padding-bottom: 2em;
         @media screen and (max-width: 63.9375em) {
             width: 100%;
         }
     }
+}
+
+video {
+    width: 100%;
 }
