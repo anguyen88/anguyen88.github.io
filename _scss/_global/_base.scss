@@ -283,7 +283,9 @@ h1, h2, h3, h4, h5, h6, p, li {
     .project-image {
         margin: 0 auto;
         display: block;
-        padding-bottom: 3em;
+        img, video {
+            margin-bottom: 2em;
+        }
         .caption {
             font: {
                 weight: 700;
