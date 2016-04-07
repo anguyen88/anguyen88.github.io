@@ -16,7 +16,7 @@ permalink: virginmobile/
 </div>
 <div class="row clearfix project-image">
 	<div class="column full">
-		<img src="/img/proj/virginmobile/photo-grid-2.png" alt="">
+		<img src="/img/proj/virginmobile/photo-grid.jpg" alt="">
 	</div>
 </div>
 <div class="row clearfix project-image">
