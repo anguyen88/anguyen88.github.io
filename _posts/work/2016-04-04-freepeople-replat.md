@@ -23,6 +23,7 @@ permalink: fp-replat/
 	<div class="column full">
 		<p class="caption">Desktop Homepage</p>
 		<img class="drop-shadow" src="/img/proj/fp-replat/img-1.jpg" alt="">
+		<img class="drop-shadow" src="/img/proj/fp-replat/img-11.jpg" alt="">
 		<p class="project-description"><strong>Goal</strong>: The homepage was taking up to 6-7 seconds to load on enterprise-level internet speeds, and homepages sometimes topped out at 24+MB, this would never work for users across the world on mobile devices.</p>
 		<p class="project-description padding-bottom"><strong>Solve</strong>: We set a budget for the homepage and incorporated an optimization + minification process to the graphic design team's workflow. These changes gave us a huge performance gain, we were able to take homepages down to nearly a sub 1 second page load time along with reducing homepages down to roughly 1-3MB. This number is allowed to fluctuate to take care of any business needs.</p>
 	</div>
@@ -67,6 +68,12 @@ permalink: fp-replat/
 		<img class="drop-shadow" src="/img/proj/fp-replat/img-6.jpg" alt="">
 		<p class="project-description"><strong>Goal</strong>: Provide a clean and fast checkout experience to the customer to reduce cart abandonment and increase checkout completion.</p>
 		<p class="project-description padding-bottom"><strong>Solve</strong>: We provided a stripped down version of the page header and footer. This removed a lot of visual clutter that could distract customers from going through the process. Information that was necessary for checkout was broken out into different buckets that could be hidden or shown depending on the combination of what was being bought and method of shipping. This allowed for a more customized experience through checkout rather than surfacing buckets that were entirely optional to fill out.</p>
+	</div>
+</div>
+<div class="row clearfix project-image">
+	<div class="column full">
+		<p class="caption">App Download Page</p>
+		<img class="drop-shadow" src="/img/proj/fp-replat/img-10.jpg" alt="">
 	</div>
 </div>
 <div class="row clearfix project-image">

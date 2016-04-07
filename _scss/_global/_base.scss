@@ -18,6 +18,7 @@ html {
 }
 
 a {
+    display: inline-block;
     color: $white;
     text-decoration: none;
     border-bottom: 1px solid $white;

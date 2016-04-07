@@ -14,16 +14,22 @@ permalink: tcm-cff
 </div>
 <div class="row clearfix project-image">
 	<div class="column full">
-		<img src="/img/proj/tcmcff/img-1.jpg" alt="">
+		<img class="drop-shadow" src="/img/proj/tcmcff/img-1.jpg" alt="">
+	</div>
+</div>
+<div class="row clearfix project-image">
+	<div class="column third medium-third">
+		<img class="drop-shadow" src="/img/proj/tcmcff/img-2.jpg" alt="">
+	</div>
+	<div class="column third medium-third">
+		<img class="drop-shadow" src="/img/proj/tcmcff/img-6.jpg" alt="">
+	</div>
+	<div class="column third medium-third">
+		<img class="drop-shadow" src="/img/proj/tcmcff/img-7.jpg" alt="">
 	</div>
 </div>
 <div class="row clearfix project-image">
 	<div class="column full">
-		<img src="/img/proj/tcmcff/img-2.jpg" alt="">
-	</div>
-</div>
-<div class="row clearfix project-image">
-	<div class="column full">
-		<img src="/img/proj/tcmcff/img-3.jpg" alt="">
+		<img class="drop-shadow" src="/img/proj/tcmcff/img-3.jpg" alt="">
 	</div>
 </div>
