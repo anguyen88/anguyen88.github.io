@@ -23,6 +23,8 @@ permalink: virginmobile/
 	<div class="column full">
 		<p class="caption">Facebook Promotional Content</p>
 	</div>
+</div>
+<div class="row clearfix project-image">
 	<div class="column third medium-third">
 		<img class="drop-shadow" src="/img/proj/virginmobile/img-4.jpg" alt="">
 	</div>

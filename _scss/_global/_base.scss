@@ -294,6 +294,12 @@ h1, h2, h3, h4, h5, h6, p, li {
             letter-spacing: 4px;
             text-transform: uppercase;
         }
+        .project-description {
+            font: {
+                weight: 300;
+                size: 18px;
+            };
+        }
     }
     @media screen and (max-width: 39.9375em) {
         p {
