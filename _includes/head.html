@@ -34,7 +34,7 @@
 	<!-- Put your fonts here -->
 	<link href='https://fonts.googleapis.com/css?family=Alegreya|Source+Sans+Pro:300,400,900,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+	{% if jekyll.environment == 'production' %}
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -43,8 +43,8 @@
 
 		ga('create', 'UA-41881012-1', 'auto');
 		ga('send', 'pageview');
-
 	</script>
+	{% endif %}
 </head>
 
 <body>
