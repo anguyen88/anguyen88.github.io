@@ -67,8 +67,12 @@ a {
     margin-bottom: 2em;
 }
 
-img {
+img, video {
     width: 100%;
+}
+
+video {
+    margin-bottom: 2em;
 }
 
 ul {
