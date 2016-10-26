@@ -1,54 +1,38 @@
 html {
     -webkit-font-smoothing: antialiased;
-    @include linear-gradient(315deg, #469cdf, #8943c6);
     background-color: #ffffff;
     height: auto;
     min-height: 100%;
     width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.error-image > img {
-    @media screen and (max-width: 39.9375em) {
-        width: 100%;
-    }
+    text-align: left;
 }
 
 a {
     display: inline-block;
-    color: $white;
+    color: $link;
     text-decoration: none;
-    border-bottom: 1px solid $white;
     font: {
         family: $sans-serif;
     };
     position: relative;
     border-bottom: none;
     padding-bottom: 2px;
-    color: $white;
     &:after {
         @include transition(all 250ms ease-in-out);
         position: absolute;
         content: '';
         bottom: 0;
         height: 1px;
-        background-color: $white;
+        background-color: $link;
         width: 100%;
         left: 0;
     }
     &:hover {
-        color: $white;
+        color: $black;
         &:after {
             width: 0;
+            background-color: $black;
         }
-    }
-    &:active,
-    &:visited,
-    &:focus {
-        color: $white;
     }
 }
 
@@ -58,7 +42,7 @@ ul {
 }
 
 h1, h2, h3, h4, h5, h6, p, li {
-    color: $white;
+    color: $black;
     font-family: $sans-serif;
 }
 
@@ -66,64 +50,6 @@ h1, h2, h3, h4, h5, h6, p, li {
     position: relative;
 }
 
-// Navigation
-
-#page--navigation {
-    position: absolute;
-    top: 0;
-    margin: 2em 0;
-    z-index: 2;
-    .link-item {
-        display: inline-table;
-        list-style: none;
-        font: {
-            size: 18px;
-        };
-        padding-right: 3em;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-        &:last-child {
-            padding-right: 0;
-        }
-        a {
-            position: relative;
-            border-bottom: none;
-            padding-bottom: 2px;
-            color: $white;
-            &:after {
-                @include transition(all 250ms ease-in-out);
-                position: absolute;
-                content: '';
-                bottom: 13px;
-                height: 1px;
-                background-color: $white;
-                width: 0;
-                left: 0;
-            }
-            &:hover {
-                color: $white;
-                &:after {
-                    width: 100%;
-                }
-            }
-        }
-    }
-    @media screen and (max-width: 39.9375em) {
-        position: relative;
-        margin: 2em 0 0;
-        .link-item {
-            padding-right: 1em;
-            font-size: 16px;
-            a {
-                &:hover {
-                    &:after {
-                        bottom: 11px;
-                    }
-                }
-            }
-        }
-    }
-}
 
 // // Homepage
 
@@ -133,7 +59,7 @@ h1, h2, h3, h4, h5, h6, p, li {
         family: $sans-serif;
         weight: 900;
     };
-    color: $white;
+    color: $black;
     line-height: 1.1;
     margin-bottom: 0;
     @media screen and (max-width: 39.9375em) {
@@ -144,31 +70,49 @@ h1, h2, h3, h4, h5, h6, p, li {
 }
 
 #homepage--body {
+    h1 {
+        font-size: 52px;
+        font-weight: 400;
+        margin-bottom: 0;
+        letter-spacing: -2px;
+        @media screen and (max-width: 39.9375em) {
+            font-size: 30px;
+            letter-spacing: -1.25px;
+        }
+    }
     p {
-        color: $white;
+        color: $black;
         font: {
             family: $sans-serif;
-            size: 20px;
+            size: 18px;
             weight: 300;
         };
         line-height: 1.4;
+        margin: 2em 0;
+    }
+    .tag {
+        margin: 0;
+        color: #919191;
+        letter-spacing: -.5px;
     }
     @media screen and (max-width: 39.9375em) {
         p {
-            font-size: 18px;
+            font-size: 16px;
         }
         padding-bottom: 4em;
     }
 }
 
 .social-networks {
+
     margin: 2em 0 0;
     li {
         display: inline-block;
         list-style: none;
-        margin-right: 2em;
+        margin: 0 1em 0 0;
     }
     a {
+        color: $black;
         i {
             @include transition(all 200ms ease-in-out);
         }
@@ -186,192 +130,5 @@ h1, h2, h3, h4, h5, h6, p, li {
     }
     @media screen and (max-width: 39.9375em) {
         margin: 3em 0 0;
-    }
-}
-
-#subpage--body {
-    margin-top: 7em;
-    padding-bottom: 2em;
-    @media screen and (max-width: 39.9375em) {
-        margin-top: 1em;
-    }
-}
-
-// Resume
-
-.resume--body {
-    .employer--info {
-        list-style: none;
-        margin: 0 0 1em;
-        min-height: 110px;
-        .company {
-            font: {
-                size: 21px;
-                weight: 700;
-            };
-            span.location {
-                font: {
-                    size: 14px;
-                    weight: 500;
-                };
-                text-transform: capitalize;
-            }
-        }
-        .position {
-            margin-bottom: .375em;
-        }
-        span.date {
-            font: {
-                size: 14px;
-                weight: 500;
-            };
-            font-style: italic;
-        }
-    }
-    .download-link {
-        display: inline-block;
-        margin-top: 4em;
-    }
-    @media screen and (max-width: 39.9375em) {
-        .employer--info {
-            min-height: initial;
-            margin-bottom: 1.5em;
-            .company {
-                font: {
-                    size: 18px;
-                    weight: 700;
-                };
-            }
-        }
-    }
-}
-
-.work-landing--body {
-    .work--list {
-        .work--list-item {
-            list-style: none;
-            margin: 0 0 1.5em;
-            a {
-                font: {
-                    size: 21px;
-                };
-                &:hover {
-                    color: #8943c6;
-                    &:after {
-                        width: 100%;
-                        height: 100%;
-                        z-index: -2;
-                    }
-                }
-            }
-        }
-    }
-}
-
-.project--landing {
-    p {
-        font: {
-            size: 21px;
-            weight: 300;
-        };
-        line-height: 1.5;
-        margin: 0 0 1em;
-    }
-    ul {
-        margin-bottom: 1em;
-    }
-    li {
-        @extend p;
-        margin: 0;
-    }
-    .project-image {
-        margin: 0 auto;
-        display: block;
-        img, video {
-            margin-bottom: 2rem;
-        }
-        .caption {
-            font: {
-                weight: 700;
-                size: 14px;
-            };
-            letter-spacing: 4px;
-            text-transform: uppercase;
-        }
-        .project-description {
-            font: {
-                weight: 300;
-                size: 18px;
-            };
-        }
-    }
-    @media screen and (max-width: 39.9375em) {
-        p {
-            font: {
-                size: 18px;
-            };
-        }
-    }
-    img,
-    video {
-        text-align: center;
-        width: 100%;
-        @media screen and (max-width: 63.9375em) {
-            width: 100%;
-        }
-    }
-    video {
-        margin-bottom: 0em;
-        @media screen and (max-width: 39.9375em) {
-            margin-bottom: 3em;
-        }
-    }
-}
-
-video {
-    width: 100%;
-}
-
-#footer {
-    p {
-        @media screen and (max-width: 39.9375em) {
-            font-size: 14px;
-        }
-    }
-}
-
-.project-navigation {
-    border-top: 1px solid $white;
-    border-bottom: 1px solid $white;
-    padding: 2em 0 5em;
-    margin-bottom: 2em;
-    @media screen and (max-width: 39.9375em) {
-        padding: 2em 0 4.25em;
-    }
-    a {
-        background-color: transparent;
-        border: 1px solid white;
-        padding: .75em;
-        color: white;
-        @media screen and (max-width: 39.9375em) {
-            font-size: 12px;
-        }
-        &:after {
-            height: 0;
-        }
-        &:hover {
-            color: purple;
-            &:after {
-                height: 100%;
-                width: 100%;
-                z-index: -1;
-            }
-        }
-    }
-    .next {
-        float: left;
-    }
-    .prev {
-        float: right;
     }
 }
