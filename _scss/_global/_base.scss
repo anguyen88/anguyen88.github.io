@@ -7,6 +7,33 @@ html {
     text-align: left;
 }
 
+.coverage {
+    p, h1, h2, h3, h4, h5, h6, ul, li {
+        font-family: "Source Sans Pro";
+        color: $black !important;
+        letter-spacing: 0;
+        line-height: 1.6;
+    }
+    p {
+        font-size: 18px;
+    }
+    a {
+        font-family: "Source Sans Pro";
+    }
+    .back-link {
+        margin: 2em 0;
+    }
+    ul {
+        margin-left: 0;
+        @media screen and (max-width: 39.9375em) {
+            margin-left: 1em;
+        }
+    }
+    .caption {
+        font-size: 30px;
+    }
+}
+
 a {
     display: inline-block;
     color: $link;
@@ -36,6 +63,14 @@ a {
     }
 }
 
+.back-link {
+    margin-bottom: 2em;
+}
+
+img {
+    width: 100%;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -44,6 +79,17 @@ ul {
 h1, h2, h3, h4, h5, h6, p, li {
     color: $black;
     font-family: $sans-serif;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: -2.5px;
+    @media screen and (max-width: 39.9375em) {
+        font-size: 30px;
+        letter-spacing: -1.25px;
+    }
 }
 
 .homepage--wrapper {
@@ -70,16 +116,6 @@ h1, h2, h3, h4, h5, h6, p, li {
 }
 
 #homepage--body {
-    h1 {
-        font-size: 52px;
-        font-weight: 400;
-        margin: 0;
-        letter-spacing: -2.5px;
-        @media screen and (max-width: 39.9375em) {
-            font-size: 30px;
-            letter-spacing: -1.25px;
-        }
-    }
     p {
         color: $black;
         font: {
@@ -128,5 +164,12 @@ h1, h2, h3, h4, h5, h6, p, li {
     }
     @media screen and (max-width: 39.9375em) {
         margin: 3em 0 0;
+    }
+}
+
+.work--list {
+    li {
+        list-style: none;
+        padding: .25em;
     }
 }
