@@ -73,8 +73,8 @@ h1, h2, h3, h4, h5, h6, p, li {
     h1 {
         font-size: 52px;
         font-weight: 400;
-        margin-bottom: 0;
-        letter-spacing: -2px;
+        margin: 0;
+        letter-spacing: -2.5px;
         @media screen and (max-width: 39.9375em) {
             font-size: 30px;
             letter-spacing: -1.25px;
@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6, p, li {
     li {
         display: inline-block;
         list-style: none;
-        margin: 0 1em 0 0;
+        margin: 0 1.5em 0 0;
     }
     a {
         color: $black;
