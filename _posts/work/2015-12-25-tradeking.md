@@ -4,6 +4,7 @@ categories: project
 title: Tradeking Mobile App
 comments: false
 permalink: tradeking/
+published: false
 ---
 <div class="row clearfix">
 	<div class="column full">
