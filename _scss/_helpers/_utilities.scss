@@ -9,6 +9,21 @@
     align-items: center;
 }
 
+.flexbox--container--alternate {
+    height: 100vh;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    @media screen and (max-width: 39.9375em) {
+        display: block;
+        height: 100%;
+    }
+}
+
 .subpage--title {
     margin-bottom: .5em;
     text-transform: uppercase;

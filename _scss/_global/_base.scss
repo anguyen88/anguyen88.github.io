@@ -9,16 +9,18 @@ html {
 
 .coverage {
     p, h1, h2, h3, h4, h5, h6, ul, li {
-        font-family: "Source Sans Pro";
         color: $black !important;
         letter-spacing: 0;
         line-height: 1.6;
+        font-weight: 500;
     }
     p {
-        font-size: 18px;
+        font-size: 16px;
+        @media screen and (max-width: 39.9375em) {
+            font-size: 14px;
+        }
     }
     a {
-        font-family: "Source Sans Pro";
     }
     .back-link {
         margin: 2em 0;
@@ -28,9 +30,24 @@ html {
         @media screen and (max-width: 39.9375em) {
             margin-left: 1em;
         }
+        li {
+            p {
+                margin: .125em 0;
+                @media screen and (max-width: 39.9375em) {
+                    margin: 0;
+                }
+            }
+        }
     }
     .caption {
         font-size: 30px;
+        margin-top: 1.5em;
+        @media screen and (max-width: 39.9375em) {
+                    font-size: 24px;
+                }
+    }
+    img {
+        margin-bottom: 2em;
     }
 }
 
@@ -64,7 +81,7 @@ a {
 }
 
 .back-link {
-    margin-bottom: 2em;
+    margin: 2em 0;
 }
 
 img, video {
@@ -174,6 +191,6 @@ h1 {
 .work--list {
     li {
         list-style: none;
-        padding: .25em;
+        padding: .5em 0;
     }
 }
