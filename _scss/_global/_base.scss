@@ -169,14 +169,15 @@ h1 {
     a {
         color: $black;
         i {
-            @include transition(all 200ms ease-in-out);
+            @include transition(all 270ms ease-in-out);
         }
         &:after {
             width: 0;
         }
         &:hover {
             i {
-                @include transform(scale(1.375));
+                color: $blue;
+                @include transform(scale(1.25));
             }
             &:after {
                 width: 0;
