@@ -53,7 +53,10 @@ html {
 
 a {
     display: inline-block;
-    color: $link;
+    // color: $link;
+    @include link-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-decoration: none;
     font: {
         family: $sans-serif;
@@ -67,6 +70,7 @@ a {
         content: '';
         bottom: 0;
         height: 1px;
+        @include link-gradient;
         background-color: $link;
         width: 100%;
         left: 0;

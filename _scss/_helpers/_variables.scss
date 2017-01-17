@@ -36,3 +36,12 @@ $secondary: #fc9d82;
 // Images
 $hero-image: "/img/hero/hero-orb.png";
 $free-hero-image: "/img/proj/freepeople/free-hero.jpg";
+
+@mixin link-gradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9d26c1+0,e80bbf+100 */
+background: #9d26c1; /* Old browsers */
+background: -moz-linear-gradient(left,  #9d26c1 0%, #e80bbf 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #9d26c1 0%,#e80bbf 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #9d26c1 0%,#e80bbf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9d26c1', endColorstr='#e80bbf',GradientType=1 ); /* IE6-9 */
+}
