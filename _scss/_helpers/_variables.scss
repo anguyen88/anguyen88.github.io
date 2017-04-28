@@ -1,4 +1,14 @@
-$sans-serif: "Source Code Pro", Helvetica, sans-serif;
+@font-face{ 
+	font-family: 'League Gothic';
+	src: url('/a/fonts/league-gothic/leaguegothic-regular-webFont.eot');
+	src: url('/a/fonts/league-gothic/leaguegothic-regular-webFont.eot?#iefix') format('embedded-opentype'),
+	     url('/a/fonts/league-gothic/leaguegothic-regular-webFont.woff') format('woff'),
+	     url('/a/fonts/league-gothic/leaguegothic-regular-webFont.ttf') format('truetype'),
+	     url('/a/fonts/league-gothic/leaguegothic-regular-webFont.svg#webfont') format('svg');
+}
+
+$header-sans: 'League Gothic';
+$sans-serif: "Open Sans", Helvetica, sans-serif;
 $serif: "Alegreya", Georgia, serif;
 
 $white: #f8f8f8;
